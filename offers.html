@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>OFFERS</title>
+    <style>
+        body{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        header {
+            position: fixed;
+            background-color: #be664e42;
+            width: 100vw;
+        }
+
+        #head ul li {
+            display: inline-block;
+
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: a bsolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 190px;
+            margin-top: -70px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+        #footer {
+            background-color: var(--secondary-color);
+
+        }
+
+        footer {
+            position: relative;
+            width: 100%;
+            background-color: rgb(19, 17, 17);
+            min-height: 200px;
+            display: flex;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        footer .social_icons footer .menu {
+            position: relative;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 10px 0;
+
+        }
+
+        footer .social_icons li footer .menu li {
+            list-style: none;
+        }
+
+        footer .social_icons li a {
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+        }
+
+        footer .social_icons li a:hover {
+            transform: translateY(-10px);
+
+        }
+
+        footer .menu li a {
+            font-size: 1.2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+
+        footer .menu li a:hover {
+            opacity: 1;
+        }
+
+        footer p {
+            color: #fff;
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img src="sources/CAFE LOGO.png" style="height: 150px;width: 200px;">
+            <a href="home.html">HOME</a>
+            <a href="menu.html">ORDER ONLINE</a>
+            <a href="about us.html">ABOUT US</a>
+            <a href="index.html">RESERVATION</a>
+            <a href="offers.html">OFFERS</a>
+        </div>
+        <div style="display: flex;">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <h4 style="padding-left: 40%; margin-top: 14px;">
+                THE GREEN YARD CAFE
+            </h4>
+            <a href="login page.html" style="padding-left: 40%; margin-top: 14px;">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+    </header>
+    <div class="posters">
+        <img src="sources/OFFER 1.png" style="width: 100%;height:100%">
+        <img src="sources/OFFER 2.png" style="width: 100%;height:100%">
+        <img src="sources/OFFER 3.png" style="width: 100%;height:100%">
+        <img src="sources/OFFER 4.png" style="width: 100%;height:100%">
+    </div>
+
+
+
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+        </div>
+        <ul class="social_icons" style="display: flex; list-style: none;">
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtu.be/hHTteL5zbs8">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu" style="display: flex; list-style: none;">
+            <li>
+                <a href="#Home">HOME</a>
+            </li>
+            <li>
+                <a href="menu.html">ORDER ONLINE</a>
+            </li>
+            <li>
+                <a href="about us.html">ABOUT US</a>
+            </li>
+            <li>
+                <a href="login page.html">LOG IN</a>
+            </li>
+        </ul>
+        <p>THE GREENYARD CAFE</p>
+
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
